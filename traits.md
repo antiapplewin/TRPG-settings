@@ -12,5 +12,4 @@ title: Traits 목록
 | {{ trait.name }} | {{ trait.desc }} | {{ trait.tags | join: ", " }} | {{ trait.category }} |
 {% endfor %}
 {% endcapture %}
-
-{{ traits_table | markdownify }}
+{{ traits_table | strip | markdownify }}
