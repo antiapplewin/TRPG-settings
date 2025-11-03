@@ -11,7 +11,6 @@ title: Traits 목록
             <th>이름</th>
             <th>설명</th>
             <th>태그</th>
-            <th>카테고리</th>
         </tr>
     </thead>
     <tbody>
