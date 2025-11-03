@@ -4,3 +4,7 @@ show_downloads: false
 google_analytics:
 theme: jekyll-theme-hacker
 includes_dir: _include
+markdown: kramdown
+kramdown:
+  input: GFM
+  parse_block_html: true
