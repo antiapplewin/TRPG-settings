@@ -4,6 +4,7 @@
             <tr>
                 <th>이름</th>
                 <th>설명</th>
+                <th>코멘트</th>
                 <th>태그</th>
                 <th>카테고리</th>
             </tr>
@@ -13,6 +14,7 @@
             <tr>
                 <td>{{ trait.name }}</td>
                 <td>{{ trait.desc }}</td>
+                <td><code>{{ trait.comm }}</code></td>
                 <td>{{ trait.tags | join: ", " }}</td>
                 <td>{{ trait.category }}</td>
             </tr>
