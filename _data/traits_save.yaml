@@ -1,6 +1,6 @@
 - id: test
   name: "test"
   desc: "test"
-  comm: "test"
+  comm: "`test`"
   tags: ["test"]
   category : "test"
