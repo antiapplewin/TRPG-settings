@@ -18,9 +18,8 @@ title: Traits 목록
         {% for trait in site.data.traits_save %}
         <tr>
             <td>{{ trait.name }}</td>
-            <td>{{ trait.desc }}</td>
+            <td>`{{ trait.comm }}`<br>{{ trait.desc }}</td>
             <td>{{ trait.tags | join: ", " }}</td>
-            <td>{{ trait.category }}</td>
         </tr>
         {% endfor %}
     </tbody>
