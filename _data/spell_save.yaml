@@ -1,0 +1,8 @@
+- name: "spell1"
+  desc: "spell1"
+  spty: "spell"
+  sorc: "spell1"
+  dmg: "1d4"
+  def: "1d4"
+  hlt: "1d4"
+  btds: "spell1"
