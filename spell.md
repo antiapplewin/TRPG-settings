@@ -2,6 +2,7 @@
     <thead>
         <tr>
             <th>주문명</th>
+            <th>주문레벨</th>
             <th>주문 설명</th>
             <th>요소</th>
             <th>학파</th>
@@ -13,6 +14,7 @@
         {% for spell in site.data.spell_save %}
         <tr data-tags="{{ spell.tags | join: ',' | downcase }}">
             <td>{{ spell.name }}</td>
+            <td>{{ spell.lvl }}</td>
             <td>{{ spell.desc }}</td>
             <td>{{ spell.spty }}</td>
             <td>{{ spell.sorc }}</td>

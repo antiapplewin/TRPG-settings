@@ -1,4 +1,5 @@
 - name: "spell1"
+  level: -1
   desc: "spell1"
   spty: "spell"
   sorc: "spell1"
