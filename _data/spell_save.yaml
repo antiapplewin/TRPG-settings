@@ -127,7 +127,7 @@
 - name: "사냥귀 호출"
   level: 0
   desc: "원하는 위치에 사냥귀를 소환한다 사냥귀는 가장 가까운 존재를 추격한다 3턴 뒤에 사라지며 퇴마 시 사라진다"
-  spty: "영혼계"
+  spty: "사령계계"
   dmg: "0"
   def: "0"
   hlt: "0"
@@ -141,3 +141,327 @@
   def: "0"
   hlt: "0"
   btds: "공격을 받을 시 일정 확률로 공격을 회피한다"
+
+- name: "원소 흡수"
+  level: 1
+  desc: "받은 데미지의 종류에 따라 원소 상태가 달라진다"
+  spty: "방호계"
+  dmg: "0"
+  def: "0"
+  hlt: "0"
+  btds: "원소 상태에 따라 공격이 달라지는 공격이 여럿 있다"
+
+- name: "원소 발사체"
+  level: 1
+  desc: "원소 상태에 따라 발사체의 특징이 달라진다"
+  spty: "조형계"
+  dmg: "1d4"
+  def: "0"
+  hlt: "0"
+  btds: "상태 이상 또는 추가 데미지 중 원하는 것을 선택할 수 있다"
+
+- name: "확성"
+  level: 1
+  desc: "큰 목소리로 말하게 된다"
+  spty: "방호계"
+  dmg: "0"
+  def: "0"
+  hlt: "0"
+  btds: "전투에는 영향을 주지 않는다"
+
+- name: "축복"
+  level: 1
+  desc: "아군 한 명에게 축복을 내린다"
+  spty: "환혹계"
+  dmg: "0"
+  def: "0"
+  hlt: "0"
+  btds: "축복을 받은 아군은 공격을 할때 1d4의 추가 데미지를 입힌다"
+
+- name: "상처 회복"
+  level: 1
+  desc: "조그만한 상처를 회복한다"
+  spty: "방출계"
+  dmg: "0"
+  def: "0"
+  hlt: "1d4+1"
+  btds: "특이사항이 없다"
+
+- name: "화살비"
+  level: 1
+  desc: "화살비를 내리게 한다"
+  spty: "방출계"
+  dmg: "(3d4, 2d4)"
+  def: "0"
+  hlt: "0"
+  btds: "특이사항이 없다"
+
+- name: "감지"
+  level: 1
+  desc: "은신 상태의 적을 감지한다"
+  spty: "예지계"
+  dmg: "0"
+  def: "0"
+  hlt: "0"
+  btds: "특이사항이 없다"
+
+- name: "에어본"
+  level: 1
+  desc: "몸을 붕 뜨게 한다"
+  spty: "조형계"
+  dmg: "0"
+  def: "0"
+  hlt: "0"
+  btds: "목표를 2턴 동안 에어본 상태로 만든다"
+
+- name: "방어막"
+  level: 1
+  desc: "방어막을 소환한다"
+  spty: "방호계"
+  dmg: "0"
+  def: "1d8"
+  hlt: "0"
+  btds: "물리 데미지 방어시 +2"
+
+- name: "자장가"
+  level: 1
+  desc: "적을 재운다"
+  spty: "환혹계"
+  dmg: "0"
+  def: "0"
+  hlt: "0"
+  btds: "목표를 1턴 동안 수면 상태로 만든다"
+
+- name: "폭발"
+  level: 1
+  desc: "폭발을 이르킨다"
+  spty: "방출계"
+  dmg: "1d12"
+  def: "0"
+  hlt: "0"
+  btds: "특이사항이 없다"
+
+- name: "낙하 방지"
+  level: 1
+  desc: "낙하 데미지를 무효로 한다"
+  spty: "방호계"
+  dmg: "0"
+  def: "0"
+  hlt: "0"
+  btds: "특이사항이 없다"
+
+- name: "유리파편"
+  level: 1
+  desc: "유리를 깨트려서 피해를 준다"
+  spty: "방출형"
+  dmg: "1d3*5"
+  def: "0"
+  hlt: "0"
+  btds: "특이사항이 없다"
+
+- name: "독/질병 감지"
+  level: 1
+  desc: "독이나 질병이 존재하는지 확인한다다"
+  spty: "예지계"
+  dmg: "0"
+  def: "0"
+  hlt: "0"
+  btds: "특이사항이 없다"
+
+- name: "분장"
+  level: 1
+  desc: "자신을 다른이로 분장한다"
+  spty: "환영계"
+  dmg: "0"
+  def: "0"
+  hlt: "0"
+  btds: "특이사항이 없다"
+
+- name: "야생동물 훈련"
+  level: 1
+  desc: "야생동물을 훈련시킨다"
+  spty: "현혹계"
+  dmg: "0"
+  def: "0"
+  hlt: "0"
+  btds: "특이사항이 없다"
+
+- name: "원소 무기 강화"
+  level: 1
+  desc: "무기에 1턴간 원소 상태에 따른 버프가 주어진다다"
+  spty: "환혹계"
+  dmg: "0"
+  def: "0"
+  hlt: "0"
+  btds: "특이사항이 없다"
+
+- name: "음식/음료 정화"
+  level: 1
+  desc: "음식/음료을 정화시킨다"
+  spty: "변환계"
+  dmg: "0"
+  def: "0"
+  hlt: "0"
+  btds: "특이사항이 없다"
+
+- name: "강제 기상"
+  level: 1
+  desc: "수면 상태인 대상을 강제로 깨운다"
+  spty: "환혹계"
+  dmg: "0"
+  def: "0"
+  hlt: "0"
+  btds: "특이사항이 없다"
+
+- name: "번개 파동"
+  level: 1
+  desc: "대상으로부터 점점 퍼져나가 광역 피해를 준다"
+  spty: "방출계"
+  dmg: "2d4"
+  def: "0"
+  hlt: "0"
+  btds: "첫번째 목표는 1턴간 기절한다"
+
+- name: "바람의 풍경"
+  level: 1
+  desc: "이동 속도가 10칸 증가한다"
+  spty: "변환계"
+  dmg: "0"
+  def: "0"
+  hlt: "0"
+  btds: "자신이 물리 공격을 할때 1d8의 추가 피해를 준다"
+
+- name: "중력 조작"
+  level: 2
+  desc: "중력을 조작한다"
+  spty: "변환계"
+  dmg: "0"
+  def: "0"
+  hlt: "0"
+  btds: "특이사항이 없다다"
+
+- name: "영혼 수집가"
+  level: 2
+  desc: "시체로부터 영혼을 얻는다"
+  spty: "사령계"
+  dmg: "0"
+  def: "0"
+  hlt: "0"
+  btds: "사령계 마법의 효력이 수집한 영혼 당 0.1배 증가한다"
+
+- name: "은신"
+  level: 2
+  desc: "2턴 간 은신 상태가 된다"
+  spty: "방호계"
+  dmg: "0"
+  def: "0"
+  hlt: "0"
+  btds: "특이사항이 없다다"
+
+- name: "반무효화"
+  level: 2
+  desc: "공격 1회를 무효화한다"
+  spty: "방호계"
+  dmg: "0"
+  def: "2d5"
+  hlt: "0"
+  btds: "무효화한 후 방어를 얻는다"
+
+- name: "실명화"
+  level: 2
+  desc: "목표의 명중률을 크게 떨군다"
+  spty: "사령계"
+  dmg: "1d3"
+  def: "0"
+  hlt: "0"
+  btds: "특이사항이 없다"
+
+- name: "구름 단검"
+  level: 2
+  desc: "단검 무기에 구름 인첸트를 2턴간 부여한다"
+  spty: "환혹계계"
+  dmg: "0"
+  def: "0"
+  hlt: "0"
+  btds: "구름 인첸트를 받은 단검은 주위 5칸 이내의 적에게 50% 데미지를 입힌다"
+
+- name: "독심술"
+  level: 2
+  desc: "적의 마음을 읽는다"
+  spty: "예지계"
+  dmg: "0"
+  def: "0"
+  hlt: "0"
+  btds: "특이사항이 없다"
+
+- name: "밤눈"
+  level: 2
+  desc: "야간 투시를 얻는다"
+  spty: "환혹계"
+  dmg: "0"
+  def: "0"
+  hlt: "0"
+  btds: "특이사항이 없다"
+
+- name: "원소 광선"
+  level: 2
+  desc: "원소에 따른 광선을 보낸다"
+  spty: "방호계"
+  dmg: "2d4"
+  def: "0"
+  hlt: "0"
+  btds: "불/얼음일시 +2, 공기, 대지일시 +1, 나머지는 +0"
+
+- name: "불의 창"
+  level: 2
+  desc: "불로 이루워진 창을 만든다"
+  spty: "조형계"
+  dmg: "2d4"
+  def: "0"
+  hlt: "0"
+  btds: "목표에게 2턴동안 화상상태를 부여한다"
+
+- name: "회복의 영혼"
+  level: 2
+  desc: "회복하는 영혼을 부른다"
+  spty: "조형계"
+  dmg: "0"
+  def: "0"
+  hlt: "(1d6, 0, 0, 1d6)"
+  btds: "특이사항이 없다"
+
+- name: "비행"
+  level: 2
+  desc: "날아오른다"
+  spty: "조형계"
+  dmg: "0"
+  def: "0"
+  hlt: "0"
+  btds: "특이사항이 없다"
+
+- name: "달빛"
+  level: 2
+  desc: "달의 밝은 빛으로 공격한다"
+  spty: "방출형"
+  dmg: "1d10"
+  def: "0"
+  hlt: "0"
+  btds: "보름달일시 1d5의 고정데미지, 달이 없을시 무효"
+
+- name: "그림자 칼날"
+  level: 2
+  desc: "어둠에 침식된 검을 소환한다"
+  spty: "환영계"
+  dmg: "1d6"
+  def: "0"
+  hlt: "(0, 0, -1d6)"
+  btds: "데미지를 입히고 준 데미지만큼 적을 회복시킨다 그리고 자신의 체력을 깎고 준 데미지의 2배의 데미지를 부여한다다"
+
+- name: "메두사의 눈빛"
+  level: 2
+  desc: "목표를 2턴간 석화 시킨다"
+  spty: "환영계"
+  dmg: "0"
+  def: "0"
+  hlt: "0"
+  btds: "특이사항이 없다"
