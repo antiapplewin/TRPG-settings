@@ -13,7 +13,7 @@
         {% for spell in site.data.spell_save %}
         <tr data-tags="{{ spell.tags | join: ',' | downcase }}">
             <td>{{ spell.name }}</td>
-            <td>{{ spell.lvl }}</td>
+            <td>{{ spell.level }}</td>
             <td>{{ spell.desc }}</td>
             <td>{{ spell.spty }}</td>
             <td>{{ spell.dmg }}<br>{{ spell.def }}<br>{{ spell.hlt }}</td>
