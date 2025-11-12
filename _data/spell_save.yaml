@@ -1,9 +1,108 @@
-- name: "spell1"
+- name: "작은 불씨"
   level: -1
-  desc: "spell1"
-  spty: "spell"
-  sorc: "spell1"
+  desc: "작은 불씨를 이르킨다"
+  spty: "방출계"
+  dmg: "0"
+  def: "0"
+  hlt: "0"
+  btds: "전투에는 영향을 주지 않는다"
+
+- name: "옅은 향내"
+  level: -1
+  desc: "향을 피운다"
+  spty: "환영계"
+  dmg: "0"
+  def: "0"
+  hlt: "0"
+  btds: "전투에는 영향을 주지 않는다"
+
+- name: "조그만한 빛"
+  level: -1
+  desc: "조그만한 빛을 이르킨다"
+  spty: "방출계"
+  dmg: "0"
+  def: "0"
+  hlt: "0"
+  btds: "전투에는 영향을 주지 않는다"
+
+- name: "독 웅덩이"
+  level: 0
+  desc: "독 웅덩이를 만든다"
+  spty: "조형계계"
+  dmg: "0"
+  def: "0"
+  hlt: "0"
+  btds: "전투동안 한 칸에 독 웅덩이를 만든다. 독 웅덩이를 밟은 적은 독 상태가 된다."
+
+- name: "화염 조종"
+  level: 0
+  desc: "화염을 조종한다"
+  spty: "변환계"
   dmg: "1d4"
-  def: "1d4"
-  hlt: "1d4"
-  btds: "spell1"
+  def: "0"
+  hlt: "0"
+  btds: "특이사항이 없다다"
+
+- name: "영원한 우정!"
+  level: 0
+  desc: "1턴 동안 친구가 된다"
+  spty: "환혹계"
+  dmg: "0"
+  def: "0"
+  hlt: "0"
+  btds: "일정 확률로 한 턴 동안 적을 아군으로 만든다"
+
+- name: "번개"
+  level: 0
+  desc: "번개를 원하는 위치에 소환한다"
+  spty: "방출계"
+  dmg: "1d10"
+  def: "0"
+  hlt: "0"
+  btds: "특이사항이 없다"
+
+- name: "번개"
+  level: 0
+  desc: "번개를 원하는 위치에 소환한다"
+  spty: "방출계"
+  dmg: "1d10"
+  def: "0"
+  hlt: "0"
+  btds: "특이사항이 없다"
+
+- name: "화살"
+  level: 0
+  desc: "화살을 총 3개 발사한다"
+  spty: "방출계"
+  dmg: "(1d4, 1d4, 1d4)"
+  def: "0"
+  hlt: "0"
+  btds: "특이사항이 없다"
+
+- name: "방어태세"
+  level: 0
+  desc: "순간적으로 방어 태세를 취한다"
+  spty: "방호계"
+  dmg: "0"
+  def: "1d3"
+  hlt: "0"
+  btds: "특이사항이 없다"
+
+- name: "행동 회복 스톤"
+  level: 0
+  desc: "행동을 회복 시키는 스톤을 소환한다"
+  spty: "조형계"
+  dmg: "0"
+  def: "0"
+  hlt: "0"
+  btds: "소환하고 다음턴에 이 스톤을 들고 있는 사람은 추가 행동이 가능하다"
+
+- name: "동상"
+  level: 0
+  desc: "동상을 이르킨다"
+  spty: "방출계"
+  dmg: "1d6"
+  def: "0"
+  hlt: "0"
+  btds: "목표와 시전자는 다음 턴에 손을 사용할 수 없다"
+
