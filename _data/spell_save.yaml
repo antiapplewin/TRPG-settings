@@ -379,7 +379,7 @@
 - name: "구름 단검"
   level: 2
   desc: "단검 무기에 구름 인첸트를 2턴간 부여한다"
-  spty: "환혹계계"
+  spty: "환혹계"
   dmg: "0"
   def: "0"
   hlt: "0"
@@ -462,6 +462,150 @@
   desc: "목표를 2턴간 석화 시킨다"
   spty: "환영계"
   dmg: "0"
+  def: "0"
+  hlt: "0"
+  btds: "특이사항이 없다"
+
+- name: "희생적 연구"
+  level: 3
+  desc: "자신의 신체로 연구를 진행한다다"
+  spty: "방출계"
+  dmg: "0"
+  def: "0"
+  hlt: "-1d8"
+  btds: "모든 아군을 자신의 감소한 체력만큼 회복시킨다"
+
+- name: "부활"
+  level: 3
+  desc: "죽은자를 부활시킨다"
+  spty: "사령계"
+  dmg: "0"
+  def: "0"
+  hlt: "0"
+  btds: "마나 추가 감소량 +3"
+
+- name: "수중호흡"
+  level: 3
+  desc: "2턴 간 수중호흡이 가능해진다"
+  spty: "환혹계계"
+  dmg: "0"
+  def: "0"
+  hlt: "0"
+  btds: "특이사항이 없다다"
+
+- name: "카운터터"
+  level: 3
+  desc: "공격 1회를 완전 카운터한다"
+  spty: "방호계"
+  dmg: "0"
+  def: "0"
+  hlt: "0"
+  btds: "원래 자신이 받아야 하는 피해를 완전히 반사시킨다다"
+
+- name: "새로운 생명"
+  level: 3
+  desc: "어느 환경에도 식물을 자라게 한다"
+  spty: "조형계"
+  dmg: "0"
+  def: "0"
+  hlt: "1d3(광역힐)"
+  btds: "특이사항이 없다"
+
+- name: "저주"
+  level: 3
+  desc: "원하는 디버프를 한가지 1턴 동안 지속되게 한다"
+  spty: "환영계"
+  dmg: "0"
+  def: "0"
+  hlt: "0"
+  btds: "특이사항이 없다다"
+
+- name: "지진"
+  level: 3
+  desc: "모든 적에게 지진을 이르킨다"
+  spty: "변환계"
+  dmg: "2d5"
+  def: "0"
+  hlt: "0"
+  btds: "특이사항이 없다"
+
+- name: "원소 결합"
+  level: 3
+  desc: "2가지의 원소 상태를 결합해 마법을 시전한다"
+  spty: "환혹계"
+  dmg: "0"
+  def: "0"
+  hlt: "0"
+  btds: "예시) 화염 + 바람 -> 화염 폭풍"
+
+- name: "태양의 창"
+  level: 3
+  desc: "태양에서 온 창을 5개 공격한다"
+  spty: "방출형"
+  dmg: "(2d4*3, 1d8, 3d5)"
+  def: "0"
+  hlt: "0"
+  btds: "밤일시 무효"
+
+- name: "시간의 변형"
+  level: 3
+  desc: "시간을 원하는 시간대로 바꾼다"
+  spty: "변환계"
+  dmg: "0"
+  def: "0"
+  hlt: "0"
+  btds: "특이사항이 없다다"
+
+- name: "차원 이동"
+  level: 3
+  desc: "자신의 차원으로 이동한다"
+  spty: "조형계"
+  dmg: "0"
+  def: "0"
+  hlt: "0"
+  btds: "특이사항이 없다"
+
+- name: "가시 갑옷"
+  level: 3
+  desc: "공격과 방어를 동시에 한다"
+  spty: "조형계"
+  dmg: "2d5"
+  def: "2d5"
+  hlt: "0"
+  btds: "특이사항이 없다"
+
+- name: "극한 활성화"
+  level: 3
+  desc: "하나의 기계를 극한으로 활성화시킨다"
+  spty: "환혹계"
+  dmg: "0"
+  def: "0"
+  hlt: "0"
+  btds: "특이사항이 없다"
+
+- name: "신속의 배틀필드"
+  level: 3
+  desc: "전투장에 있는 아군의 이동속도는 증가하고 적은 감소한다"
+  spty: "변형계"
+  dmg: "0"
+  def: "1d3"
+  hlt: "0"
+  btds: "특이사항이 없다"
+
+- name: "도발 인형"
+  level: 3
+  desc: "모든 적을 도발시키는 인형을 배치한다"
+  spty: "환영계"
+  dmg: "0"
+  def: "0"
+  hlt: "0"
+  btds: "인형은 2턴 뒤에 사라지며 죽지 않는다"
+
+- name: "공포포"
+  level: 3
+  desc: "모든 적을 공포상태로 만든다"
+  spty: "환영계"
+  dmg: "2d4"
   def: "0"
   hlt: "0"
   btds: "특이사항이 없다"
