@@ -21,16 +21,31 @@ spells.each do |spell|
   spell_name = spell['name']
   filename = File.join(spells_dir, "#{spell_name}.md")
   
-  # Front matter를 YAML로 생성
-  front_matter = {
-    'layout' => 'spell',
-    'title' => spell['name'],
-    'spell' => spell
-  }
-  
-  # MD 파일 내용 생성
-  yaml_header = YAML.dump(front_matter).gsub(/^---\n/, '').strip
-  content = "---\n#{yaml_header}\n---\n"
+  # MD 파일 내용 생성 (Jekyll front matter 포함)
+  content = <<~MD
+    ---
+    layout: default
+    title: "#{spell['name']}"
+    ---
+    
+    # #{spell['name']}
+    
+    ## 주문 정보
+    
+    - **레벨**: #{spell['level']}
+    - **속성**: #{spell['spty']}
+    - **피해**: #{spell['dmg']}
+    - **방어**: #{spell['def']}
+    - **체력**: #{spell['hlt']}
+    
+    ## 설명
+    
+    #{spell['desc']}
+    
+    ## 특이사항
+    
+    #{spell['btds']}
+  MD
   
   # 파일 쓰기
   File.write(filename, content)
