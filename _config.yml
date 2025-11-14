@@ -10,3 +10,7 @@ kramdown:
 plugins:
   - jekyll-remote-theme
   - jekyll-feed
+
+# 커스텀 플러그인 활성화
+include:
+  - _plugins

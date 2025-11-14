@@ -21,8 +21,10 @@ module Jekyll
       @name = "index.html"
 
       self.process(@name)
-      self.read_yaml(File.join(@base, "_layouts"), "spell.html")
-
+      
+      # 레이아웃 설정
+      self.data["layout"] = "spell"
+      
       # YAML 데이터를 페이지 변수로 넘김
       self.data["spell"] = spell
       self.data["title"] = spell["name"]
