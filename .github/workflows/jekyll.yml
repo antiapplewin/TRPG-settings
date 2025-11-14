@@ -33,11 +33,11 @@ jobs:
         id: pages
         uses: actions/configure-pages@v4
       
+      - name: Generate spell pages
+        run: ruby generate_spells.rb
+      
       - name: Build with Jekyll
-        run: |
-          gem install bundler
-          bundle install
-          bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
       
