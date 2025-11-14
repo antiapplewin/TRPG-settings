@@ -70,15 +70,6 @@
   hlt: "0"
   btds: "특이사항이 없다"
 
-- name: "번개"
-  level: 0
-  desc: "번개를 원하는 위치에 소환한다"
-  spty: "방출계"
-  dmg: "1d10"
-  def: "0"
-  hlt: "0"
-  btds: "특이사항이 없다"
-
 - name: "화살"
   level: 0
   desc: "화살을 총 3개 발사한다"
