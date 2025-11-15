@@ -9,10 +9,14 @@ title: 주문
   <label for="school-filter"><strong>학파 필터:</strong></label>
   <select id="school-filter" onchange="filterBySchool()">
     <option value="">전체</option>
-    {% assign schools = site.data.spell_save | map: "spty" | uniq | sort %}
-    {% for school in schools %}
-    <option value="{{ school }}">{{ school }}</option>
-    {% endfor %}
+    <option value="방출계">방출계</option>
+    <option value="방호계">방호계</option>
+    <option value="변환계">변환계</option>
+    <option value="사령계">사령계</option>
+    <option value="예지계">예지계</option>
+    <option value="조형계">조형계</option>
+    <option value="환영계">환영계</option>
+    <option value="환혹계">환혹계</option>
   </select>
 </div>
 
