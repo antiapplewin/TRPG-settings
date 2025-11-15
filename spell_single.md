@@ -63,18 +63,17 @@ function displaySpell() {
     
     <h2>주문 정보</h2>
     
-    <ul>
-      <li><strong>레벨</strong>: ${spell.level}</li>
-      <li><strong>속성</strong>: ${spell.spty}</li>
-      <li><strong>피해</strong>: ${spell.dmg}</li>
-      <li><strong>방어</strong>: ${spell.def}</li>
-      <li><strong>체력</strong>: ${spell.hlt}</li>
-    </ul>
+    <li><strong>레벨</strong>: ${spell.level}</li>
+    <li><strong>학파</strong>: ${spell.spty}</li>
     
     <h2>설명</h2>
     <p>${spell.desc}</p>
     
-    <h2>특이사항</h2>
+    <h2>전투 정보</h2>
+    <li><strong>피해</strong>: ${spell.dmg}</li>
+    <li><strong>방어</strong>: ${spell.def}</li>
+    <li><strong>체력</strong>: ${spell.hlt}</li>
+
     <p>${spell.btds}</p>
   `;
   
