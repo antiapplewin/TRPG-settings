@@ -6,34 +6,43 @@ title: 주문
 # 주문 목록
 
 <div style="margin-bottom: 20px;">
-  <strong>학파 필터:</strong><br>
-  <label style="margin-right: 15px;">
-    <input type="checkbox" class="school-checkbox" value="전체" onchange="filterBySchool()" checked> 전체
-  </label>
-  <label style="margin-right: 15px;">
-    <input type="checkbox" class="school-checkbox" value="방출계" onchange="filterBySchool()"> 방출계
-  </label>
-  <label style="margin-right: 15px;">
-    <input type="checkbox" class="school-checkbox" value="방호계" onchange="filterBySchool()"> 방호계
-  </label>
-  <label style="margin-right: 15px;">
-    <input type="checkbox" class="school-checkbox" value="변환계" onchange="filterBySchool()"> 변환계
-  </label>
-  <label style="margin-right: 15px;">
-    <input type="checkbox" class="school-checkbox" value="사령계" onchange="filterBySchool()"> 사령계
-  </label>
-  <label style="margin-right: 15px;">
-    <input type="checkbox" class="school-checkbox" value="예지계" onchange="filterBySchool()"> 예지계
-  </label>
-  <label style="margin-right: 15px;">
-    <input type="checkbox" class="school-checkbox" value="조형계" onchange="filterBySchool()"> 조형계
-  </label>
-  <label style="margin-right: 15px;">
-    <input type="checkbox" class="school-checkbox" value="환영계" onchange="filterBySchool()"> 환영계
-  </label>
-  <label style="margin-right: 15px;">
-    <input type="checkbox" class="school-checkbox" value="환혹계" onchange="filterBySchool()"> 환혹계
-  </label>
+  <div style="margin-bottom: 10px;">
+    <strong>주문명 검색:</strong><br>
+    <input type="text" id="spell-search" placeholder="주문명을 입력하세요 (예: 흡혈)" 
+           style="width: 300px; padding: 5px; margin-top: 5px;" 
+           oninput="filterBySchool()">
+  </div>
+  
+  <div>
+    <strong>학파 필터:</strong><br>
+    <label style="margin-right: 15px;">
+      <input type="checkbox" class="school-checkbox" value="전체" onchange="filterBySchool()" checked> 전체
+    </label>
+    <label style="margin-right: 15px;">
+      <input type="checkbox" class="school-checkbox" value="방출계" onchange="filterBySchool()"> 방출계
+    </label>
+    <label style="margin-right: 15px;">
+      <input type="checkbox" class="school-checkbox" value="방호계" onchange="filterBySchool()"> 방호계
+    </label>
+    <label style="margin-right: 15px;">
+      <input type="checkbox" class="school-checkbox" value="변환계" onchange="filterBySchool()"> 변환계
+    </label>
+    <label style="margin-right: 15px;">
+      <input type="checkbox" class="school-checkbox" value="사령계" onchange="filterBySchool()"> 사령계
+    </label>
+    <label style="margin-right: 15px;">
+      <input type="checkbox" class="school-checkbox" value="예지계" onchange="filterBySchool()"> 예지계
+    </label>
+    <label style="margin-right: 15px;">
+      <input type="checkbox" class="school-checkbox" value="조형계" onchange="filterBySchool()"> 조형계
+    </label>
+    <label style="margin-right: 15px;">
+      <input type="checkbox" class="school-checkbox" value="환영계" onchange="filterBySchool()"> 환영계
+    </label>
+    <label style="margin-right: 15px;">
+      <input type="checkbox" class="school-checkbox" value="환혹계" onchange="filterBySchool()"> 환혹계
+    </label>
+  </div>
 </div>
 
 <table>
@@ -48,7 +57,7 @@ title: 주문
     </thead>
     <tbody>
         {% for spell in site.data.spell_save %}
-        <tr data-school="{{ spell.spty }}">
+        <tr data-school="{{ spell.spty }}" data-name="{{ spell.name }}">
             <td><a href="spell_single.html?spell={{ spell.name | url_encode }}">{{ spell.name }}</a></td>
             <td>{{ spell.level }}</td>
             <td>{{ spell.spty }}</td>
@@ -61,6 +70,9 @@ title: 주문
 
 <script>
 function filterBySchool() {
+  // 검색어 가져오기
+  const searchText = document.getElementById('spell-search').value.trim().toLowerCase();
+  
   // 선택된 모든 체크박스 가져오기
   const checkboxes = document.querySelectorAll('.school-checkbox');
   const selectedSchools = [];
@@ -71,7 +83,7 @@ function filterBySchool() {
     }
   });
   
-  // "전체"가 선택되어 있으면 모든 주문 표시
+  // "전체"가 선택되어 있으면 모든 학파 허용
   const showAll = selectedSchools.includes('전체');
   
   const rows = document.querySelectorAll('tbody tr');
@@ -79,9 +91,16 @@ function filterBySchool() {
   
   rows.forEach(row => {
     const school = row.getAttribute('data-school');
+    const name = row.getAttribute('data-name').toLowerCase();
     
-    // "전체"가 선택되었거나, 선택된 학파 목록에 포함되어 있으면 표시
-    if (showAll || selectedSchools.includes(school)) {
+    // 학파 조건 확인 (OR)
+    const schoolMatch = showAll || selectedSchools.includes(school);
+    
+    // 이름 조건 확인 (부분 일치)
+    const nameMatch = searchText === '' || name.includes(searchText);
+    
+    // AND 조건: 학파 조건 AND 이름 조건 둘 다 만족해야 표시
+    if (schoolMatch && nameMatch) {
       row.style.display = '';
       visibleCount++;
     } else {
