@@ -19,7 +19,7 @@ title: 주문
     <tbody>
         {% for spell in site.data.spell_save %}
         <tr>
-            <td>{{ spell.name }}</td>
+            <td>[{{ spell.name }}](spell_single.html?spell={{ spell.name }})</td>
             <td>{{ spell.level }}</td>
             <td>{{ spell.desc }}</td>
             <td>{{ spell.spty }}</td>
