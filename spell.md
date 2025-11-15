@@ -5,6 +5,7 @@ title: 주문
 
 # 주문 목록
 
+{::nomarkdown}
 <div style="margin-bottom: 20px;">
   <div style="margin-bottom: 10px;">
     <strong>주문명 검색:</strong><br>
@@ -12,7 +13,8 @@ title: 주문
            style="width: 300px; padding: 5px; margin-top: 5px;" 
            oninput="filterBySchool()">
   </div>
-  
+{:/nomarkdown}
+{::nomarkdown}
   <div>
     <strong>학파 필터:</strong><br>
     <label style="margin-right: 15px;">
@@ -44,6 +46,7 @@ title: 주문
     </label>
   </div>
 </div>
+{:/nomarkdown}
 
 <table>
     <thead>
@@ -68,6 +71,7 @@ title: 주문
     </tbody>
 </table>
 
+{::nomarkdown}
 <script>
 function filterBySchool() {
   // 검색어 가져오기
@@ -143,4 +147,5 @@ window.addEventListener('DOMContentLoaded', function() {
   }
 });
 </script>
+{:/nomarkdown}
 
