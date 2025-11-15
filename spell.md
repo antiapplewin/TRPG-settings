@@ -6,18 +6,34 @@ title: 주문
 # 주문 목록
 
 <div style="margin-bottom: 20px;">
-  <label for="school-filter"><strong>학파 필터:</strong></label>
-  <select id="school-filter" onchange="filterBySchool()">
-    <option value="">전체</option>
-    <option value="방출계">방출계</option>
-    <option value="방호계">방호계</option>
-    <option value="변환계">변환계</option>
-    <option value="사령계">사령계</option>
-    <option value="예지계">예지계</option>
-    <option value="조형계">조형계</option>
-    <option value="환영계">환영계</option>
-    <option value="환혹계">환혹계</option>
-  </select>
+  <strong>학파 필터:</strong><br>
+  <label style="margin-right: 15px;">
+    <input type="checkbox" class="school-checkbox" value="전체" onchange="filterBySchool()" checked> 전체
+  </label>
+  <label style="margin-right: 15px;">
+    <input type="checkbox" class="school-checkbox" value="방출계" onchange="filterBySchool()"> 방출계
+  </label>
+  <label style="margin-right: 15px;">
+    <input type="checkbox" class="school-checkbox" value="방호계" onchange="filterBySchool()"> 방호계
+  </label>
+  <label style="margin-right: 15px;">
+    <input type="checkbox" class="school-checkbox" value="변환계" onchange="filterBySchool()"> 변환계
+  </label>
+  <label style="margin-right: 15px;">
+    <input type="checkbox" class="school-checkbox" value="사령계" onchange="filterBySchool()"> 사령계
+  </label>
+  <label style="margin-right: 15px;">
+    <input type="checkbox" class="school-checkbox" value="예지계" onchange="filterBySchool()"> 예지계
+  </label>
+  <label style="margin-right: 15px;">
+    <input type="checkbox" class="school-checkbox" value="조형계" onchange="filterBySchool()"> 조형계
+  </label>
+  <label style="margin-right: 15px;">
+    <input type="checkbox" class="school-checkbox" value="환영계" onchange="filterBySchool()"> 환영계
+  </label>
+  <label style="margin-right: 15px;">
+    <input type="checkbox" class="school-checkbox" value="환혹계" onchange="filterBySchool()"> 환혹계
+  </label>
 </div>
 
 <table>
@@ -25,7 +41,6 @@ title: 주문
         <tr>
             <th>주문명</th>
             <th>주문레벨</th>
-            <th>주문 설명</th>
             <th>학파</th>
             <th>효과</th>
             <th>특수효과</th>
@@ -36,7 +51,6 @@ title: 주문
         <tr data-school="{{ spell.spty }}">
             <td><a href="spell_single.html?spell={{ spell.name | url_encode }}">{{ spell.name }}</a></td>
             <td>{{ spell.level }}</td>
-            <td>{{ spell.desc }}</td>
             <td>{{ spell.spty }}</td>
             <td>피해: {{ spell.dmg }}<br>방어: {{ spell.def }}<br>체력: {{ spell.hlt }}</td>
             <td>{{ spell.btds }}</td>
@@ -47,20 +61,42 @@ title: 주문
 
 <script>
 function filterBySchool() {
-  const selectedSchool = document.getElementById('school-filter').value;
+  // 선택된 모든 체크박스 가져오기
+  const checkboxes = document.querySelectorAll('.school-checkbox');
+  const selectedSchools = [];
+  
+  checkboxes.forEach(checkbox => {
+    if (checkbox.checked) {
+      selectedSchools.push(checkbox.value);
+    }
+  });
+  
+  // "전체"가 선택되어 있으면 모든 주문 표시
+  const showAll = selectedSchools.includes('전체');
+  
   const rows = document.querySelectorAll('tbody tr');
   let visibleCount = 0;
   
   rows.forEach(row => {
     const school = row.getAttribute('data-school');
-    // 선택된 학파와 일치하는지 확인
-    if (selectedSchool === '' || school === selectedSchool) {
+    
+    // "전체"가 선택되었거나, 선택된 학파 목록에 포함되어 있으면 표시
+    if (showAll || selectedSchools.includes(school)) {
       row.style.display = '';
       visibleCount++;
     } else {
       row.style.display = 'none';
     }
   });
+  
+  // "전체" 체크박스 처리
+  const allCheckbox = document.querySelector('.school-checkbox[value="전체"]');
+  if (showAll && selectedSchools.length > 1) {
+    // 다른 학파가 선택되면 "전체" 체크 해제
+    allCheckbox.checked = false;
+    filterBySchool(); // 다시 필터링
+    return;
+  }
   
   // 결과 개수 표시 (선택사항)
   console.log(`표시된 주문: ${visibleCount}개`);
@@ -69,9 +105,21 @@ function filterBySchool() {
 // 페이지 로드 시 URL 파라미터에서 학파 읽기
 window.addEventListener('DOMContentLoaded', function() {
   const params = new URLSearchParams(window.location.search);
-  const school = params.get('school');
-  if (school) {
-    document.getElementById('school-filter').value = decodeURIComponent(school);
+  const schools = params.getAll('school'); // 여러 학파 지원
+  
+  if (schools.length > 0) {
+    // 모든 체크박스 해제
+    document.querySelectorAll('.school-checkbox').forEach(cb => cb.checked = false);
+    
+    // URL의 학파들 체크
+    schools.forEach(school => {
+      const decodedSchool = decodeURIComponent(school);
+      const checkbox = document.querySelector(`.school-checkbox[value="${decodedSchool}"]`);
+      if (checkbox) {
+        checkbox.checked = true;
+      }
+    });
+    
     filterBySchool();
   }
 });
