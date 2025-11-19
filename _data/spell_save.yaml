@@ -5,7 +5,9 @@
   dmg: "0"
   def: "0"
   hlt: "0"
-  btds: "전투에는 영향을 주지 않는다"
+  btds: "전투에는 영향을 주지 않는다 [흡혈]"
+  rnge: ""
+  efty: ""
 
 - name: "옅은 향내"
   level: -1
@@ -15,6 +17,8 @@
   def: "0"
   hlt: "0"
   btds: "전투에는 영향을 주지 않는다"
+  rnge: ""
+  efty: ""
 
 - name: "조그만한 빛"
   level: -1
@@ -24,6 +28,8 @@
   def: "0"
   hlt: "0"
   btds: "전투에는 영향을 주지 않는다"
+  rnge: ""
+  efty: ""
 
 - name: "방어태세"
   level: -1
@@ -33,6 +39,8 @@
   def: "1d3"
   hlt: "0"
   btds: "특이사항이 없다"
+  rnge: ""
+  efty: ""
 
 - name: "독 웅덩이"
   level: 0
@@ -42,6 +50,8 @@
   def: "0"
   hlt: "0"
   btds: "전투동안 한 칸에 독 웅덩이를 만든다 독 웅덩이를 밟은 적은 독 상태가 된다"
+  rnge: ""
+  efty: ""
 
 - name: "화염 조종"
   level: 0
@@ -51,6 +61,8 @@
   def: "0"
   hlt: "0"
   btds: "특이사항이 없다"
+  rnge: ""
+  efty: ""
 
 - name: "영원한 우정!"
   level: 0
@@ -60,6 +72,8 @@
   def: "0"
   hlt: "0"
   btds: "일정 확률로 한 턴 동안 적을 아군으로 만든다"
+  rnge: ""
+  efty: ""
 
 - name: "번개"
   level: 0
@@ -69,6 +83,8 @@
   def: "0"
   hlt: "0"
   btds: "특이사항이 없다"
+  rnge: ""
+  efty: ""
 
 - name: "화살"
   level: 0
@@ -78,6 +94,8 @@
   def: "0"
   hlt: "0"
   btds: "특이사항이 없다"
+  rnge: ""
+  efty: ""
 
 - name: "행동 회복 스톤"
   level: 0
@@ -87,6 +105,8 @@
   def: "0"
   hlt: "0"
   btds: "소환하고 다음턴에 이 스톤을 들고 있는 사람은 추가 행동이 가능하다"
+  rnge: ""
+  efty: ""
 
 - name: "동상"
   level: 0
@@ -96,6 +116,8 @@
   def: "0"
   hlt: "0"
   btds: "목표와 시전자는 다음 턴에 손을 사용할 수 없다"
+  rnge: ""
+  efty: ""
 
 - name: "옅은 방어막"
   level: 0
@@ -105,6 +127,8 @@
   def: "1d4"
   hlt: "0"
   btds: "특이사항이 없다"
+  rnge: ""
+  efty: ""
 
 - name: "가시 돋힌 덩굴"
   level: 0
@@ -114,6 +138,8 @@
   def: "0"
   hlt: "0"
   btds: "특이사항이 없다"
+  rnge: ""
+  efty: ""
 
 - name: "사냥귀 호출"
   level: 0
@@ -123,6 +149,8 @@
   def: "0"
   hlt: "0"
   btds: "사냥귀의 공격은 1d3이다다"
+  rnge: ""
+  efty: ""
 
 - name: "회피"
   level: 0
@@ -132,6 +160,8 @@
   def: "0"
   hlt: "0"
   btds: "공격을 받을 시 일정 확률로 공격을 회피한다"
+  rnge: ""
+  efty: ""
 
 - name: "원소 흡수"
   level: 1
@@ -141,6 +171,8 @@
   def: "0"
   hlt: "0"
   btds: "원소 상태에 따라 공격이 달라지는 공격이 여럿 있다"
+  rnge: ""
+  efty: ""
 
 - name: "원소 발사체"
   level: 1
@@ -150,6 +182,8 @@
   def: "0"
   hlt: "0"
   btds: "상태 이상 또는 추가 데미지 중 원하는 것을 선택할 수 있다"
+  rnge: ""
+  efty: ""
 
 - name: "확성"
   level: 1
@@ -159,6 +193,8 @@
   def: "0"
   hlt: "0"
   btds: "전투에는 영향을 주지 않는다"
+  rnge: ""
+  efty: ""
 
 - name: "일식/월식"
   level: 1
@@ -168,6 +204,8 @@
   def: "0"
   hlt: "0"
   btds: "바꾼 버프의 지속시간을 2턴 증가시킨다"
+  rnge: ""
+  efty: ""
 
 - name: "축복"
   level: 1
@@ -177,6 +215,8 @@
   def: "0"
   hlt: "0"
   btds: "축복을 받은 아군은 공격을 할때 1d4의 추가 데미지를 입힌다"
+  rnge: ""
+  efty: ""
 
 - name: "상처 회복"
   level: 1
@@ -186,6 +226,8 @@
   def: "0"
   hlt: "1d4+1"
   btds: "특이사항이 없다"
+  rnge: ""
+  efty: ""
 
 - name: "화살비"
   level: 1
@@ -195,6 +237,8 @@
   def: "0"
   hlt: "0"
   btds: "특이사항이 없다"
+  rnge: ""
+  efty: ""
 
 - name: "감지"
   level: 1
@@ -204,6 +248,8 @@
   def: "0"
   hlt: "0"
   btds: "특이사항이 없다"
+  rnge: ""
+  efty: ""
 
 - name: "에어본"
   level: 1
@@ -213,6 +259,8 @@
   def: "0"
   hlt: "0"
   btds: "목표를 2턴 동안 에어본 상태로 만든다"
+  rnge: ""
+  efty: ""
 
 - name: "방어막"
   level: 1
@@ -222,6 +270,8 @@
   def: "1d8"
   hlt: "0"
   btds: "물리 데미지 방어시 +2"
+  rnge: ""
+  efty: ""
 
 - name: "자장가"
   level: 1
@@ -231,6 +281,8 @@
   def: "0"
   hlt: "0"
   btds: "목표를 1턴 동안 수면 상태로 만든다"
+  rnge: ""
+  efty: ""
 
 - name: "폭발"
   level: 1
@@ -240,6 +292,8 @@
   def: "0"
   hlt: "0"
   btds: "특이사항이 없다"
+  rnge: ""
+  efty: ""
 
 - name: "낙하 방지"
   level: 1
@@ -249,6 +303,8 @@
   def: "0"
   hlt: "0"
   btds: "특이사항이 없다"
+  rnge: ""
+  efty: ""
 
 - name: "유리파편"
   level: 1
@@ -258,6 +314,8 @@
   def: "0"
   hlt: "0"
   btds: "특이사항이 없다"
+  rnge: ""
+  efty: ""
 
 - name: "독+질병 감지"
   level: 1
@@ -267,6 +325,8 @@
   def: "0"
   hlt: "0"
   btds: "특이사항이 없다"
+  rnge: ""
+  efty: ""
 
 - name: "분장"
   level: 1
@@ -276,6 +336,8 @@
   def: "0"
   hlt: "0"
   btds: "특이사항이 없다"
+  rnge: ""
+  efty: ""
 
 - name: "야생동물 훈련"
   level: 1
@@ -285,6 +347,8 @@
   def: "0"
   hlt: "0"
   btds: "특이사항이 없다"
+  rnge: ""
+  efty: ""
 
 - name: "원소 무기 강화"
   level: 1
@@ -294,6 +358,8 @@
   def: "0"
   hlt: "0"
   btds: "특이사항이 없다"
+  rnge: ""
+  efty: ""
 
 - name: "음식+음료 정화"
   level: 1
@@ -303,6 +369,8 @@
   def: "0"
   hlt: "0"
   btds: "특이사항이 없다"
+  rnge: ""
+  efty: ""
 
 - name: "강제 기상"
   level: 1
@@ -312,6 +380,8 @@
   def: "0"
   hlt: "0"
   btds: "특이사항이 없다"
+  rnge: ""
+  efty: ""
 
 - name: "번개 파동"
   level: 1
@@ -321,6 +391,8 @@
   def: "0"
   hlt: "0"
   btds: "첫번째 목표는 1턴간 기절한다"
+  rnge: ""
+  efty: ""
 
 - name: "바람의 풍경"
   level: 1
@@ -330,6 +402,8 @@
   def: "0"
   hlt: "0"
   btds: "자신이 물리 공격을 할때 1d8의 추가 피해를 준다"
+  rnge: ""
+  efty: ""
 
 - name: "태양의 오라"
   level: 1
@@ -339,6 +413,8 @@
   def: "0"
   hlt: "0"
   btds: "시전자에게 태양의 오라를 2턴 준다다"
+  rnge: ""
+  efty: ""
 
 - name: "달의 오라"
   level: 1
@@ -348,6 +424,8 @@
   def: "0"
   hlt: "0"
   btds: "시전자에게 달의 오라를 2턴 준다다"
+  rnge: ""
+  efty: ""
 
 - name: "중력 조작"
   level: 2
@@ -357,6 +435,8 @@
   def: "0"
   hlt: "0"
   btds: "특이사항이 없다다"
+  rnge: ""
+  efty: ""
 
 - name: "영혼 수집가"
   level: 2
@@ -366,6 +446,8 @@
   def: "0"
   hlt: "0"
   btds: "사령계 마법의 효력이 수집한 영혼 당 0.1배 증가한다"
+  rnge: ""
+  efty: ""
 
 - name: "은신"
   level: 2
@@ -375,6 +457,8 @@
   def: "0"
   hlt: "0"
   btds: "특이사항이 없다다"
+  rnge: ""
+  efty: ""
 
 - name: "반무효화"
   level: 2
@@ -384,6 +468,8 @@
   def: "2d5"
   hlt: "0"
   btds: "무효화한 후 방어를 얻는다"
+  rnge: ""
+  efty: ""
 
 - name: "실명화"
   level: 2
@@ -393,6 +479,8 @@
   def: "0"
   hlt: "0"
   btds: "특이사항이 없다"
+  rnge: ""
+  efty: ""
 
 - name: "구름 단검"
   level: 2
@@ -402,6 +490,8 @@
   def: "0"
   hlt: "0"
   btds: "구름 인첸트를 받은 단검은 주위 5칸 이내의 적에게 50% 데미지를 입힌다"
+  rnge: ""
+  efty: ""
 
 - name: "독심술"
   level: 2
@@ -411,6 +501,8 @@
   def: "0"
   hlt: "0"
   btds: "특이사항이 없다"
+  rnge: ""
+  efty: ""
 
 - name: "밤눈"
   level: 2
@@ -420,6 +512,8 @@
   def: "0"
   hlt: "0"
   btds: "특이사항이 없다"
+  rnge: ""
+  efty: ""
 
 - name: "원소 광선"
   level: 2
@@ -429,6 +523,8 @@
   def: "0"
   hlt: "0"
   btds: "불/얼음일시 +2, 공기, 대지일시 +1, 나머지는 +0"
+  rnge: ""
+  efty: ""
 
 - name: "불의 창"
   level: 2
@@ -438,6 +534,8 @@
   def: "0"
   hlt: "0"
   btds: "목표에게 2턴동안 화상상태를 부여한다"
+  rnge: ""
+  efty: ""
 
 - name: "회복의 영혼"
   level: 2
@@ -447,6 +545,8 @@
   def: "0"
   hlt: "(1d6, 0, 0, 1d6)"
   btds: "특이사항이 없다"
+  rnge: ""
+  efty: ""
 
 - name: "비행"
   level: 2
@@ -456,6 +556,8 @@
   def: "0"
   hlt: "0"
   btds: "특이사항이 없다"
+  rnge: ""
+  efty: ""
 
 - name: "강화형 주문"
   level: 2
@@ -465,6 +567,8 @@
   def: "0"
   hlt: "0"
   btds: "특이사항이 없다"
+  rnge: ""
+  efty: ""
 
 - name: "달빛"
   level: 2
@@ -474,6 +578,8 @@
   def: "0"
   hlt: "0"
   btds: "보름달일시 1d5의 고정데미지, 달이 없을시 무효"
+  rnge: ""
+  efty: ""
 
 - name: "그림자 칼날"
   level: 2
@@ -483,6 +589,8 @@
   def: "0"
   hlt: "(0, 0, -1d6)"
   btds: "데미지를 입히고 준 데미지만큼 적을 회복시킨다 그리고 자신의 체력을 깎고 준 데미지의 2배의 데미지를 부여한다다"
+  rnge: ""
+  efty: ""
 
 - name: "메두사의 눈빛"
   level: 2
@@ -492,6 +600,8 @@
   def: "0"
   hlt: "0"
   btds: "특이사항이 없다"
+  rnge: ""
+  efty: ""
 
 - name: "비행 새"
   level: 2
@@ -501,6 +611,8 @@
   def: "0"
   hlt: "0"
   btds: "특이사항이 없다"
+  rnge: ""
+  efty: ""
 
 - name: "복수"
   level: 2
@@ -510,6 +622,8 @@
   def: "0"
   hlt: "0"
   btds: "특이사항이 없다"
+  rnge: ""
+  efty: ""
 
 - name: "고주파"
   level: 3
@@ -519,6 +633,8 @@
   def: "0"
   hlt: "0"
   btds: "특이사항이 없다"
+  rnge: ""
+  efty: ""
 
 - name: "도발"
   level: 2
@@ -528,6 +644,8 @@
   def: "2d4"
   hlt: "0"
   btds: "받는 데미지 15% 감소"
+  rnge: ""
+  efty: ""
 
 - name: "희생적 연구"
   level: 3
@@ -537,6 +655,8 @@
   def: "0"
   hlt: "-1d8"
   btds: "모든 아군을 자신의 감소한 체력만큼 회복시킨다"
+  rnge: ""
+  efty: ""
 
 - name: "부활"
   level: 3
@@ -546,6 +666,8 @@
   def: "0"
   hlt: "0"
   btds: "마나 추가 감소량 +3"
+  rnge: ""
+  efty: ""
 
 - name: "수중호흡"
   level: 3
@@ -555,6 +677,8 @@
   def: "0"
   hlt: "0"
   btds: "특이사항이 없다다"
+  rnge: ""
+  efty: ""
 
 - name: "카운터"
   level: 3
@@ -564,6 +688,8 @@
   def: "0"
   hlt: "0"
   btds: "원래 자신이 받아야 하는 피해를 완전히 반사시킨다"
+  rnge: ""
+  efty: ""
 
 - name: "영혼 호출"
   level: 3
@@ -573,6 +699,8 @@
   def: "0"
   hlt: "0"
   btds: "특이사항이 없다"
+  rnge: ""
+  efty: ""
 
 - name: "능력 학습"
   level: 3
@@ -582,6 +710,8 @@
   def: "0"
   hlt: "0"
   btds: "목표가 전에 쓴 능력을 따라한다"
+  rnge: ""
+  efty: ""
 
 - name: "위치 저장"
   level: 3
@@ -591,6 +721,8 @@
   def: "0"
   hlt: "0"
   btds: "특이사항이 없다"
+  rnge: ""
+  efty: ""
 
 - name: "새로운 생명"
   level: 3
@@ -600,6 +732,8 @@
   def: "0"
   hlt: "1d3(광역힐)"
   btds: "특이사항이 없다"
+  rnge: ""
+  efty: ""
 
 - name: "저주"
   level: 3
@@ -609,6 +743,8 @@
   def: "0"
   hlt: "0"
   btds: "특이사항이 없다다"
+  rnge: ""
+  efty: ""
 
 - name: "지진"
   level: 3
@@ -618,6 +754,8 @@
   def: "0"
   hlt: "0"
   btds: "특이사항이 없다"
+  rnge: ""
+  efty: ""
 
 - name: "폭포"
   level: 3
@@ -627,6 +765,8 @@
   def: "0"
   hlt: "0"
   btds: "특이사항이 없다"
+  rnge: ""
+  efty: ""
 
 - name: "원소 결합"
   level: 3
@@ -636,6 +776,8 @@
   def: "0"
   hlt: "0"
   btds: "예시) 화염 + 바람 -> 화염 폭풍"
+  rnge: ""
+  efty: ""
 
 - name: "태양의 창"
   level: 3
@@ -645,6 +787,8 @@
   def: "0"
   hlt: "0"
   btds: "밤일시 무효"
+  rnge: ""
+  efty: ""
 
 - name: "시간의 변형"
   level: 3
@@ -654,6 +798,8 @@
   def: "0"
   hlt: "0"
   btds: "특이사항이 없다다"
+  rnge: ""
+  efty: ""
 
 - name: "차원 이동"
   level: 3
@@ -663,6 +809,8 @@
   def: "0"
   hlt: "0"
   btds: "특이사항이 없다"
+  rnge: ""
+  efty: ""
 
 - name: "가시 갑옷"
   level: 3
@@ -672,6 +820,8 @@
   def: "2d5"
   hlt: "0"
   btds: "특이사항이 없다"
+  rnge: ""
+  efty: ""
 
 - name: "극한 활성화"
   level: 3
@@ -681,6 +831,8 @@
   def: "0"
   hlt: "0"
   btds: "특이사항이 없다"
+  rnge: ""
+  efty: ""
 
 - name: "신속의 배틀필드"
   level: 3
@@ -690,6 +842,8 @@
   def: "1d3"
   hlt: "0"
   btds: "특이사항이 없다"
+  rnge: ""
+  efty: ""
 
 - name: "도발 인형"
   level: 3
@@ -699,6 +853,8 @@
   def: "0"
   hlt: "0"
   btds: "인형은 2턴 뒤에 사라지며 죽지 않는다"
+  rnge: ""
+  efty: ""
 
 - name: "공포"
   level: 3
@@ -708,6 +864,8 @@
   def: "0"
   hlt: "0"
   btds: "특이사항이 없다"
+  rnge: ""
+  efty: ""
 
 - name: "약점 포착"
   level: 3
@@ -717,6 +875,8 @@
   def: "0"
   hlt: "0"
   btds: "다음 적이 받는 공격에 5의 추가 데미지가 들어간다다"
+  rnge: ""
+  efty: ""
 
 - name: "돌진성 공격"
   level: 3
@@ -726,6 +886,8 @@
   def: "0"
   hlt: "0"
   btds: "최대 4번 반복"
+  rnge: ""
+  efty: ""
 
 - name: "즉결 처형"
   level: 3
@@ -735,6 +897,8 @@
   def: "0"
   hlt: "0"
   btds: "특이사항이 없다"
+  rnge: ""
+  efty: ""
 
 - name: "금전적 공격격"
   level: 2
@@ -744,6 +908,8 @@
   def: "0"
   hlt: "0"
   btds: "특이사항이 없다"
+  rnge: ""
+  efty: ""
 
 - name: "대폭발"
   level: 4
@@ -753,6 +919,8 @@
   def: "0"
   hlt: "0"
   btds: "광역 공격이다"
+  rnge: ""
+  efty: ""
 
 - name: "사신의 낫"
   level: 4
@@ -762,6 +930,8 @@
   def: "0"
   hlt: "0"
   btds: "마법 공포가 자동으로 사용된다 (마나 포함 X)"
+  rnge: ""
+  efty: ""
 
 - name: "자이언트 베리어"
   level: 4
@@ -771,6 +941,8 @@
   def: "0"
   hlt: "0"
   btds: "관통 마법이 아니라면 마법과 생물 모두 지날 수 없다"
+  rnge: ""
+  efty: ""
 
 - name: "내려찍기"
   level: 4
@@ -780,6 +952,8 @@
   def: "0"
   hlt: "0"
   btds: "특이사항이 없다"
+  rnge: ""
+  efty: ""
 
 - name: "관통 마법"
   level: 4
@@ -789,6 +963,8 @@
   def: "0"
   hlt: "0"
   btds: "지난 벽의 수 만큼 +1d4"
+  rnge: ""
+  efty: ""
 
 - name: "원소 폭풍"
   level: 4
@@ -798,6 +974,8 @@
   def: "1d3(광역보호)"
   hlt: "0"
   btds: "바람과 합쳐질 경우 태풍이 되어 여러 디버프를 준다"
+  rnge: ""
+  efty: ""
 
 - name: "저주인형"
   level: 4
@@ -807,6 +985,8 @@
   def: "0"
   hlt: "0"
   btds: "특이사항이 없다"
+  rnge: ""
+  efty: ""
 
 - name: "흡혈"
   level: 4
@@ -816,6 +996,8 @@
   def: "0"
   hlt: "0"
   btds: "특이사항이 없다"
+  rnge: ""
+  efty: ""
 
 - name: "죽은자의 재등장"
   level: 4
@@ -825,6 +1007,8 @@
   def: "0"
   hlt: "-1d20"
   btds: "만약에 그 턴에 적의 생명력을 흡수한만큼 회복량 증가"
+  rnge: ""
+  efty: ""
 
 - name: "메테오 레인"
   level: 4
@@ -834,6 +1018,8 @@
   def: "0"
   hlt: "-1d15"
   btds: "마지막으로 사용한 주문이 중력 조절이라면 1d5가 2d5가 된다"
+  rnge: ""
+  efty: ""
 
 - name: "장난꾸러기"
   level: 4
@@ -843,6 +1029,8 @@
   def: "0"
   hlt: "0"
   btds: "정신 디버프가 이미 있을 경우 데미지 3배"
+  rnge: ""
+  efty: ""
 
 - name: "정신 회복"
   level: 4
@@ -852,6 +1040,8 @@
   def: "2d10"
   hlt: "0"
   btds: "특이사항이 없다"
+  rnge: ""
+  efty: ""
 
 - name: "숙련된 방어태세"
   level: 4
@@ -861,6 +1051,8 @@
   def: "1d15"
   hlt: "0"
   btds: "특이사항이 없다"
+  rnge: ""
+  efty: ""
 
 - name: "죽음의 배틀필드"
   level: 4
@@ -870,6 +1062,8 @@
   def: "0"
   hlt: "0"
   btds: "시전자는 영향을 안받으며 지난 턴 만큼 고정 데미지를 입힐 수 있다"
+  rnge: ""
+  efty: ""
 
 - name: "꿈 조작"
   level: 4
@@ -879,6 +1073,8 @@
   def: "0"
   hlt: "0"
   btds: "공포 시전한 한턴 뒤에 강제 기상을 사용한다"
+  rnge: ""
+  efty: ""
 
 - name: "견디기"
   level: 4
@@ -888,6 +1084,8 @@
   def: "0"
   hlt: "0"
   btds: "마지막 공격을 한 대상은 1턴간 기절"
+  rnge: ""
+  efty: ""
 
 - name: "방사능 치료"
   level: 5
@@ -897,6 +1095,8 @@
   def: "0"
   hlt: "(1d20?, 1d20?, 1d20?)"
   btds: "10이하라면 나온값만큼 회복을 하고 11이상이라면 나온값-10 만큼 데미지를 입힌다"
+  rnge: ""
+  efty: ""
 
 - name: "목숨을 건 게임"
   level: 5
@@ -906,6 +1106,8 @@
   def: "0"
   hlt: "0"
   btds: "특이사항이 없다다"
+  rnge: ""
+  efty: ""
 
 - name: "거대 괴수 소환"
   level: 5
@@ -915,6 +1117,8 @@
   def: "0"
   hlt: "0"
   btds: "단일 공격 : 1d20, 광역 공격 : 1d10"
+  rnge: ""
+  efty: ""
 
 - name: "태양 폭발"
   level: 5
@@ -924,6 +1128,8 @@
   def: "0"
   hlt: "0"
   btds: "특이사항이 없다"
+  rnge: ""
+  efty: ""
 
 - name: "운명을 건 예지"
   level: 5
@@ -933,6 +1139,8 @@
   def: "0"
   hlt: "0"
   btds: "특이사항이 없다"
+  rnge: ""
+  efty: ""
 
 - name: "전술:방어적"
   level: 5
@@ -942,6 +1150,8 @@
   def: "1d20 (광역)"
   hlt: "0"
   btds: "추가적으로 시전자의 건강 수치 *2 만큼 방어막이 부여된다"
+  rnge: ""
+  efty: ""
 
 - name: "강제적 신뢰"
   level: 6
@@ -951,6 +1161,8 @@
   def: "0"
   hlt: "0"
   btds: "시전자는 3턴간 혼란상태에 빠진다"
+  rnge: ""
+  efty: ""
 
 - name: "불사의 계약"
   level: 6
@@ -960,4 +1172,93 @@
   def: "0"
   hlt: "0"
   btds: "2턴 후 시전자는 3턴간 혼란상태에 빠진다"
+  rnge: ""
+  efty: ""
 
+- name: "꺽이지 않는 의지"
+  level: 6
+  desc: "그턴에 행동불능 상태가 되었다면 체력 1을 남기고 부활한다"
+  spty: "사령계"
+  dmg: "0"
+  def: "0"
+  hlt: "0"
+  btds: "이 마법은 전투 당 최대 한번만 시전이 가능하다"
+  rnge: ""
+  efty: ""
+
+- name: "7대 죄악 - 탐욕"
+  level: 7
+  desc: "전투가 끝날때까지 지속된다. 전투 동안 약탈한 물건과 골드 (한턴에 여러개 약탈시 하나로 취급)이 총 10개가 된다면 황금 왕관을 쓴다"
+  spty: "조형계"
+  dmg: "0"
+  def: "0"
+  hlt: "0"
+  btds: "황금 왕관을 쓴 상태라면 모든 마법의 공격력, 방어력, 회복력이 2배가 되며 훔친 물건이 2배가 된다."
+  rnge: ""
+  efty: ""
+
+- name: "7대 죄악 - 질투"
+  level: 7
+  desc: "그턴에 행동불능 상태가 되었다면 체력 1을 남기고 부활합니다"
+  spty: "사령계"
+  dmg: "0"
+  def: "0"
+  hlt: "0"
+  btds: "이 마법은 전투 당 최대 한번만 시전이 가능합니다"
+  rnge: ""
+  efty: ""
+
+- name: "7대 죄악 - 색시"
+  level: 7
+  desc: "그턴에 행동불능 상태가 되었다면 체력 1을 남기고 부활합니다"
+  spty: "사령계"
+  dmg: "0"
+  def: "0"
+  hlt: "0"
+  btds: "이 마법은 전투 당 최대 한번만 시전이 가능합니다"
+  rnge: ""
+  efty: ""
+
+- name: "7대 죄악 - 교만"
+  level: 7
+  desc: "그턴에 행동불능 상태가 되었다면 체력 1을 남기고 부활합니다"
+  spty: "사령계"
+  dmg: "0"
+  def: "0"
+  hlt: "0"
+  btds: "이 마법은 전투 당 최대 한번만 시전이 가능합니다"
+  rnge: ""
+  efty: ""
+
+- name: "7대 죄악 - 식탐"
+  level: 7
+  desc: "그턴에 행동불능 상태가 되었다면 체력 1을 남기고 부활합니다"
+  spty: "사령계"
+  dmg: "0"
+  def: "0"
+  hlt: "0"
+  btds: "이 마법은 전투 당 최대 한번만 시전이 가능합니다"
+  rnge: ""
+  efty: ""
+
+- name: "7대 죄악 - 나태"
+  level: 7
+  desc: "전투가 끝날때까지 수면 상태랑 별빛 효과를 얻는다. 강제 기상도 무효가 된다. 대신 몽유병 및 꿈 속 하모니를 얻는다."
+  spty: "환혹계"
+  dmg: "0"
+  def: "0"
+  hlt: "0"
+  btds: "강제 기상을 당할시 수면 상태랑 별빛 효과가 잠시 끝나고 다시 효과를 얻는다."
+  rnge: ""
+  efty: ""
+
+- name: "7대 죄악 - 분노"
+  level: 7
+  desc: "그턴에 행동불능 상태가 되었다면 체력 1을 남기고 부활합니다"
+  spty: "사령계"
+  dmg: "0"
+  def: "0"
+  hlt: "0"
+  btds: "이 마법은 전투 당 최대 한번만 시전이 가능합니다"
+  rnge: ""
+  efty: ""

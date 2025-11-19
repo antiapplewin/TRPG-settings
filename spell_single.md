@@ -42,6 +42,26 @@ function getSpellNameFromURL() {
   return '흡혈';
 }
 
+// [주문명] 패턴을 링크로 변환하는 함수
+function convertSpellLinks(text) {
+  if (!text) return '';
+  
+  // [주문명] 패턴을 찾아서 링크로 변환
+  return text.replace(/\[([^\]]+)\]/g, function(match, spellNameInBrackets) {
+    // spells 배열에서 해당 주문명 찾기
+    const foundSpell = spells.find(s => s.name === spellNameInBrackets);
+    
+    if (foundSpell) {
+      // 주문이 존재하면 링크로 변환
+      const encodedName = encodeURIComponent(spellNameInBrackets);
+      return `<a href="spell_single.html?spell=${encodedName}">${spellNameInBrackets}</a>`;
+    } else {
+      // 주문이 없으면 그대로 반환 (링크 없이)
+      return match;
+    }
+  });
+}
+
 // 주문 찾기 및 표시
 function displaySpell() {
   const spellName = getSpellNameFromURL();
@@ -58,6 +78,10 @@ function displaySpell() {
     return;
   }
   
+  // 설명과 특수효과에서 [주문명] 패턴을 링크로 변환
+  const descWithLinks = convertSpellLinks(spell.desc);
+  const btdsWithLinks = convertSpellLinks(spell.btds);
+  
   container.innerHTML = `
     <h1>${spell.name}</h1>
     
@@ -67,14 +91,14 @@ function displaySpell() {
     <li><strong>학파</strong>: ${spell.spty}</li>
     
     <h2>설명</h2>
-    <p>${spell.desc}</p>
+    <p>${descWithLinks}</p>
     
     <h2>전투 정보</h2>
     <li><strong>피해</strong>: ${spell.dmg}</li>
     <li><strong>방어</strong>: ${spell.def}</li>
     <li><strong>체력</strong>: ${spell.hlt}</li>
 
-    <p>${spell.btds}</p>
+    <p>${btdsWithLinks}</p>
   `;
   
   // 페이지 제목도 업데이트
