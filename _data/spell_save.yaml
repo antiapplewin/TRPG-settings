@@ -5,9 +5,9 @@
   dmg: "0"
   def: "0"
   hlt: "0"
-  btds: "전투에는 영향을 주지 않는다 [흡혈]"
-  rnge: ""
-  efty: ""
+  btds: "전투에는 영향을 주지 않는다"
+  rnge: "0칸"
+  efty: "화염"
 
 - name: "옅은 향내"
   level: -1
@@ -17,8 +17,8 @@
   def: "0"
   hlt: "0"
   btds: "전투에는 영향을 주지 않는다"
-  rnge: ""
-  efty: ""
+  rnge: "무한"
+  efty: "기타"
 
 - name: "조그만한 빛"
   level: -1
@@ -28,8 +28,8 @@
   def: "0"
   hlt: "0"
   btds: "전투에는 영향을 주지 않는다"
-  rnge: ""
-  efty: ""
+  rnge: "0칸"
+  efty: "빛"
 
 - name: "방어태세"
   level: -1
@@ -39,8 +39,8 @@
   def: "1d3"
   hlt: "0"
   btds: "특이사항이 없다"
-  rnge: ""
-  efty: ""
+  rnge: "0칸"
+  efty: "기타"
 
 - name: "독 웅덩이"
   level: 0
@@ -49,9 +49,9 @@
   dmg: "0"
   def: "0"
   hlt: "0"
-  btds: "전투동안 한 칸에 독 웅덩이를 만든다 독 웅덩이를 밟은 적은 독 상태가 된다"
-  rnge: ""
-  efty: ""
+  btds: "전투동안 한 칸에 독 웅덩이를 만든다 독 웅덩이를 밟은 적은 [독] 상태가 된다"
+  rnge: "10칸"
+  efty: "독"
 
 - name: "화염 조종"
   level: 0
@@ -61,8 +61,8 @@
   def: "0"
   hlt: "0"
   btds: "특이사항이 없다"
-  rnge: ""
-  efty: ""
+  rnge: "10칸"
+  efty: "화염"
 
 - name: "영원한 우정!"
   level: 0
@@ -72,8 +72,8 @@
   def: "0"
   hlt: "0"
   btds: "일정 확률로 한 턴 동안 적을 아군으로 만든다"
-  rnge: ""
-  efty: ""
+  rnge: "무한"
+  efty: "정신"
 
 - name: "번개"
   level: 0
@@ -83,8 +83,8 @@
   def: "0"
   hlt: "0"
   btds: "특이사항이 없다"
-  rnge: ""
-  efty: ""
+  rnge: "15칸"
+  efty: "번개"
 
 - name: "화살"
   level: 0
@@ -94,8 +94,8 @@
   def: "0"
   hlt: "0"
   btds: "특이사항이 없다"
-  rnge: ""
-  efty: ""
+  rnge: "20칸"
+  efty: "기타"
 
 - name: "행동 회복 스톤"
   level: 0
@@ -105,19 +105,19 @@
   def: "0"
   hlt: "0"
   btds: "소환하고 다음턴에 이 스톤을 들고 있는 사람은 추가 행동이 가능하다"
-  rnge: ""
-  efty: ""
+  rnge: "0칸"
+  efty: "보조"
 
-- name: "동상"
+- name: "극한 추위"
   level: 0
-  desc: "동상을 이르킨다"
+  desc: "[동상]을 이르킨다"
   spty: "방출계"
   dmg: "1d6"
   def: "0"
   hlt: "0"
-  btds: "목표와 시전자는 다음 턴에 손을 사용할 수 없다"
-  rnge: ""
-  efty: ""
+  btds: "목표와 시전자는 다음 턴에 [동상]을 얻는다"
+  rnge: "15칸"
+  efty: "얼음"
 
 - name: "옅은 방어막"
   level: 0
@@ -127,8 +127,8 @@
   def: "1d4"
   hlt: "0"
   btds: "특이사항이 없다"
-  rnge: ""
-  efty: ""
+  rnge: "0칸"
+  efty: "기타"
 
 - name: "가시 돋힌 덩굴"
   level: 0
@@ -138,8 +138,8 @@
   def: "0"
   hlt: "0"
   btds: "특이사항이 없다"
-  rnge: ""
-  efty: ""
+  rnge: "30칸"
+  efty: "자연"
 
 - name: "사냥귀 호출"
   level: 0
@@ -148,9 +148,9 @@
   dmg: "0"
   def: "0"
   hlt: "0"
-  btds: "사냥귀의 공격은 1d3이다다"
-  rnge: ""
-  efty: ""
+  btds: "사냥귀의 공격은 1d3이다"
+  rnge: "무한"
+  efty: "기타"
 
 - name: "회피"
   level: 0
@@ -160,8 +160,8 @@
   def: "0"
   hlt: "0"
   btds: "공격을 받을 시 일정 확률로 공격을 회피한다"
-  rnge: ""
-  efty: ""
+  rnge: "0칸"
+  efty: "기타"
 
 - name: "원소 흡수"
   level: 1
@@ -171,8 +171,8 @@
   def: "0"
   hlt: "0"
   btds: "원소 상태에 따라 공격이 달라지는 공격이 여럿 있다"
-  rnge: ""
-  efty: ""
+  rnge: "0칸"
+  efty: "원소"
 
 - name: "원소 발사체"
   level: 1
@@ -182,8 +182,8 @@
   def: "0"
   hlt: "0"
   btds: "상태 이상 또는 추가 데미지 중 원하는 것을 선택할 수 있다"
-  rnge: ""
-  efty: ""
+  rnge: "25칸"
+  efty: "원소"
 
 - name: "확성"
   level: 1
@@ -193,30 +193,30 @@
   def: "0"
   hlt: "0"
   btds: "전투에는 영향을 주지 않는다"
-  rnge: ""
-  efty: ""
+  rnge: "0칸"
+  efty: "기타"
 
 - name: "일식/월식"
   level: 1
-  desc: "태양의 오라가 있다면 달의 오라로, 달의 오라가 있다면 태양의 오라로 바꾼다."
+  desc: "[태양의 오라]가 있다면 [달의 오라]로, [달의 오라]가 있다면 [태양의 오라]로 바꾼다."
   spty: "방호계"
   dmg: "0"
   def: "0"
   hlt: "0"
   btds: "바꾼 버프의 지속시간을 2턴 증가시킨다"
-  rnge: ""
-  efty: ""
+  rnge: "0칸"
+  efty: "천체"
 
 - name: "축복"
   level: 1
-  desc: "아군 한 명에게 축복을 내린다"
+  desc: "아군 한 명에게 [축복]을 내린다"
   spty: "환혹계"
   dmg: "0"
   def: "0"
   hlt: "0"
-  btds: "축복을 받은 아군은 공격을 할때 1d4의 추가 데미지를 입힌다"
-  rnge: ""
-  efty: ""
+  btds: "특이사항이 없다"
+  rnge: "20칸"
+  efty: "기타"
 
 - name: "상처 회복"
   level: 1
@@ -226,8 +226,8 @@
   def: "0"
   hlt: "1d4+1"
   btds: "특이사항이 없다"
-  rnge: ""
-  efty: ""
+  rnge: "1칸"
+  efty: "기타"
 
 - name: "화살비"
   level: 1
@@ -237,8 +237,8 @@
   def: "0"
   hlt: "0"
   btds: "특이사항이 없다"
-  rnge: ""
-  efty: ""
+  rnge: "40칸"
+  efty: "기타"
 
 - name: "감지"
   level: 1
@@ -248,19 +248,19 @@
   def: "0"
   hlt: "0"
   btds: "특이사항이 없다"
-  rnge: ""
-  efty: ""
+  rnge: "50칸"
+  efty: "기타"
 
-- name: "에어본"
+- name: "강제 공중부양"
   level: 1
   desc: "몸을 붕 뜨게 한다"
   spty: "조형계"
   dmg: "0"
   def: "0"
   hlt: "0"
-  btds: "목표를 2턴 동안 에어본 상태로 만든다"
-  rnge: ""
-  efty: ""
+  btds: "목표를 2턴 동안 [에어본] 상태로 만든다"
+  rnge: "30칸"
+  efty: "기타"
 
 - name: "방어막"
   level: 1
@@ -270,8 +270,8 @@
   def: "1d8"
   hlt: "0"
   btds: "물리 데미지 방어시 +2"
-  rnge: ""
-  efty: ""
+  rnge: "0칸"
+  efty: "기타"
 
 - name: "자장가"
   level: 1
@@ -280,9 +280,9 @@
   dmg: "0"
   def: "0"
   hlt: "0"
-  btds: "목표를 1턴 동안 수면 상태로 만든다"
-  rnge: ""
-  efty: ""
+  btds: "목표를 1턴 동안 [수면 상태]로 만든다"
+  rnge: "20칸"
+  efty: "기타"
 
 - name: "폭발"
   level: 1
@@ -292,8 +292,8 @@
   def: "0"
   hlt: "0"
   btds: "특이사항이 없다"
-  rnge: ""
-  efty: ""
+  rnge: "10칸[3칸]"
+  efty: "폭발"
 
 - name: "낙하 방지"
   level: 1
@@ -303,8 +303,8 @@
   def: "0"
   hlt: "0"
   btds: "특이사항이 없다"
-  rnge: ""
-  efty: ""
+  rnge: "3칸"
+  efty: "기타"
 
 - name: "유리파편"
   level: 1
@@ -314,8 +314,8 @@
   def: "0"
   hlt: "0"
   btds: "특이사항이 없다"
-  rnge: ""
-  efty: ""
+  rnge: "5칸"
+  efty: "기타"
 
 - name: "독+질병 감지"
   level: 1
@@ -325,8 +325,8 @@
   def: "0"
   hlt: "0"
   btds: "특이사항이 없다"
-  rnge: ""
-  efty: ""
+  rnge: "15칸"
+  efty: "기타"
 
 - name: "분장"
   level: 1
@@ -336,8 +336,8 @@
   def: "0"
   hlt: "0"
   btds: "특이사항이 없다"
-  rnge: ""
-  efty: ""
+  rnge: "0칸"
+  efty: "연극"
 
 - name: "야생동물 훈련"
   level: 1
@@ -347,8 +347,8 @@
   def: "0"
   hlt: "0"
   btds: "특이사항이 없다"
-  rnge: ""
-  efty: ""
+  rnge: "5칸"
+  efty: "기타"
 
 - name: "원소 무기 강화"
   level: 1
