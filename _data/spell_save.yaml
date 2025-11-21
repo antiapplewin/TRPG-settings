@@ -358,8 +358,8 @@
   def: "0"
   hlt: "0"
   btds: "특이사항이 없다"
-  rnge: ""
-  efty: ""
+  rnge: "0칸"
+  efty: "원소"
 
 - name: "음식+음료 정화"
   level: 1
@@ -369,8 +369,8 @@
   def: "0"
   hlt: "0"
   btds: "특이사항이 없다"
-  rnge: ""
-  efty: ""
+  rnge: "15칸"
+  efty: "기타"
 
 - name: "강제 기상"
   level: 1
@@ -380,8 +380,8 @@
   def: "0"
   hlt: "0"
   btds: "특이사항이 없다"
-  rnge: ""
-  efty: ""
+  rnge: "20칸"
+  efty: "기타"
 
 - name: "번개 파동"
   level: 1
@@ -391,8 +391,8 @@
   def: "0"
   hlt: "0"
   btds: "첫번째 목표는 1턴간 기절한다"
-  rnge: ""
-  efty: ""
+  rnge: "20칸"
+  efty: "번개"
 
 - name: "바람의 풍경"
   level: 1
@@ -402,8 +402,8 @@
   def: "0"
   hlt: "0"
   btds: "자신이 물리 공격을 할때 1d8의 추가 피해를 준다"
-  rnge: ""
-  efty: ""
+  rnge: "30칸"
+  efty: "바람"
 
 - name: "태양의 오라"
   level: 1
