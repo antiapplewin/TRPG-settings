@@ -26,7 +26,7 @@ title: 주문
     <tbody>
         {% for buffNdebuff in site.data.buffNdebuff_save %}
         <tr data-school="{{ buffNdebuff.spty }}" data-name="{{ buffNdebuff.name }}">
-            <td>{{ buffNdebuff.name }}</a></td>
+            <td><a href="buff_single.html?buff={{ buffNdebuff.name | url_encode }}">{{ buffNdebuff.name }}</a></td>
             <td>{{ buffNdebuff.type }}</td>
             <td>{{ buffNdebuff.description }}</td>
         </tr>

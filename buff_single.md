@@ -1,14 +1,24 @@
 ---
 layout: default
-title: 주문 상세
+title: 버프/디버프 상세
 ---
 
-<div id="spell-container">
-  <p>주문을 불러오는 중...</p>
+<div id="buff-container">
+  <p>버프/디버프를 불러오는 중...</p>
 </div>
 
 <script>
-// 모든 주문 데이터를 JavaScript로 가져오기
+// 모든 버프/디버프 데이터를 JavaScript로 가져오기
+const buffs = [
+  {% for buff in site.data.buffNdebuff_save %}
+  {
+    name: {{ buff.name | jsonify }},
+    type: {{ buff.type | jsonify }},
+    description: {{ buff.description | jsonify }},
+  }{% unless forloop.last %},{% endunless %}
+  {% endfor %}
+];
+
 const spells = [
   {% for spell in site.data.spell_save %}
   {
@@ -24,36 +34,26 @@ const spells = [
   {% endfor %}
 ];
 
-const buffs = [
-  {% for buff in site.data.buffNdebuff_save %}
-  {
-    name: {{ buff.name | jsonify }},
-    type: {{ buff.type | jsonify }},
-    description: {{ buff.description | jsonify }},
-  }{% unless forloop.last %},{% endunless %}
-  {% endfor %}
-];
-
-// URL에서 주문명 추출
-function getSpellNameFromURL() {
+// URL에서 버프/디버프명 추출
+function getBuffNameFromURL() {
   const path = window.location.pathname;
-  // /spell_single/흡혈 형식에서 주문명 추출
-  const match = path.match(/\/spell_single\/([^\/]+)/);
+  // /buff_single/버프명 형식에서 버프명 추출
+  const match = path.match(/\/buff_single\/([^\/]+)/);
   if (match) {
     return decodeURIComponent(match[1]);
   }
   // 쿼리 파라미터로도 시도
   const params = new URLSearchParams(window.location.search);
-  const querySpell = params.get('spell');
-  if (querySpell) {
-    return decodeURIComponent(querySpell);
+  const queryBuff = params.get('buff');
+  if (queryBuff) {
+    return decodeURIComponent(queryBuff);
   }
   // 기본값
-  return '흡혈';
+  return '수면';
 }
 
 // [주문명] 또는 [버프(디버프)] 패턴을 링크로 변환하는 함수
-function convertSpellLinks(text) {
+function convertLinks(text) {
   if (!text) return '';
   
   // [주문명] 또는 [버프(디버프)] 패턴을 찾아서 링크로 변환
@@ -81,50 +81,41 @@ function convertSpellLinks(text) {
   });
 }
 
-// 주문 찾기 및 표시
-function displaySpell() {
-  const spellName = getSpellNameFromURL();
-  const spell = spells.find(s => s.name === spellName);
+// 버프/디버프 찾기 및 표시
+function displayBuff() {
+  const buffName = getBuffNameFromURL();
+  const buff = buffs.find(b => b.name === buffName);
   
-  const container = document.getElementById('spell-container');
+  const container = document.getElementById('buff-container');
   
-  if (!spell) {
+  if (!buff) {
     container.innerHTML = `
-      <h1>주문을 찾을 수 없습니다</h1>
-      <p>주문명: "${spellName}"</p>
-      <p>올바른 URL 형식: /spell_single/주문명</p>
+      <h1>버프/디버프를 찾을 수 없습니다</h1>
+      <p>버프/디버프명: "${buffName}"</p>
+      <p>올바른 URL 형식: /buff_single/버프명</p>
     `;
     return;
   }
   
-  // 설명과 특수효과에서 [주문명] 패턴을 링크로 변환
-  const descWithLinks = convertSpellLinks(spell.desc);
-  const btdsWithLinks = convertSpellLinks(spell.btds);
+  // 설명에서 [주문명] 또는 [버프(디버프)] 패턴을 링크로 변환
+  const descWithLinks = convertLinks(buff.description);
   
   container.innerHTML = `
-    <h1>${spell.name}</h1>
+    <h1>${buff.name}</h1>
     
-    <h2>주문 정보</h2>
+    <h2>버프/디버프 정보</h2>
     
-    <li><strong>레벨</strong>: ${spell.level}</li>
-    <li><strong>학파</strong>: ${spell.spty}</li>
+    <li><strong>타입</strong>: ${buff.type}</li>
     
     <h2>설명</h2>
     <p>${descWithLinks}</p>
-    
-    <h2>전투 정보</h2>
-    <li><strong>피해</strong>: ${spell.dmg}</li>
-    <li><strong>방어</strong>: ${spell.def}</li>
-    <li><strong>체력</strong>: ${spell.hlt}</li>
-
-    <p>${btdsWithLinks}</p>
   `;
   
   // 페이지 제목도 업데이트
-  document.title = spell.name + ' - 주문 상세';
+  document.title = buff.name + ' - 버프/디버프 상세';
 }
 
 // 페이지 로드 시 실행
-displaySpell();
+displayBuff();
 </script>
 

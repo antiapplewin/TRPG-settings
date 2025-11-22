@@ -55,7 +55,9 @@ title: 주문
             <th>주문레벨</th>
             <th>학파</th>
             <th>효과</th>
-            <th>특수효과</th>
+            <th>공격/방어/회복</th>
+            <th>사거리</th>
+            <th>시전 종류</th>
         </tr>
     </thead>
     <tbody>
@@ -65,7 +67,8 @@ title: 주문
             <td>{{ spell.level }}</td>
             <td>{{ spell.spty }}</td>
             <td>피해: {{ spell.dmg }}<br>방어: {{ spell.def }}<br>체력: {{ spell.hlt }}</td>
-            <td>{{ spell.btds }}</td>
+            <td>{{ spell.rnge }}</td>
+            <td>{{ spell.efty }}</td>
         </tr>
         {% endfor %}
     </tbody>
